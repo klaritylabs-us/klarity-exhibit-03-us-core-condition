@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-03-us-core-condition"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "US Core Condition / problem list checks for FHIR R4"
+publish = false
+
+[lib]
+name = "us_core_condition"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-condition"
+path = "src/bin/validate_condition.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
